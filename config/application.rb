@@ -42,8 +42,8 @@ module DiagramRailsApp
     config.filter_parameters += [:password]
 
     config.assets.enabled = false
-    # Avoid database connection during app initialization
-    config.assets.initialize_on_precompile = false
+    # Config whether app gets inialized, which includes database connection, during app initialization
+    config.assets.initialize_on_precompile = true
   end
   
   require 'sass'
