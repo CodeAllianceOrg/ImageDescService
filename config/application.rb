@@ -43,7 +43,7 @@ module DiagramRailsApp
 
     config.assets.enabled = false
     # Config whether app gets inialized, which includes database connection, during app initialization
-    config.assets.initialize_on_precompile = true
+    config.assets.initialize_on_precompile = false
   end
   
   require 'sass'
